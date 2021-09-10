@@ -33,7 +33,20 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    .blink-bg{
+		color: #fff;
+		padding: 10px;
+		display: inline-block;
+		border-radius: 5px;
+		animation: blinkingBackground 2s infinite;
+	}
+	@keyframes blinkingBackground{
+		0%		{ background-color: #10c018;}
+		25%		{ background-color: #1056c0;}
+		50%		{ background-color: #ef0a1a;}
+		75%		{ background-color: #254878;}
+		100%	        { background-color: #04a1d5;}
+	}
     /* First image (Logo. Full height) */
     .bgimg-1 {
         background-image: url('parallax1.jpeg');
@@ -123,14 +136,17 @@
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
               
-                <img src="me.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                <img src="me.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me"
                     width="300" height="200">
             </div><!-- Hide this text on small devices -->
- <div class="w3-col m6 w3-hide-small w3-padding-large id="skills">
+ <div class="w3-col m6  w3-padding-large id="skills">
                 <p>Welcome to my website. I am Ravi Pandey , Software Professional based in india . I'm skilled in Web Developemnt with knowledge of 
                     Java , Spring Boot , building RESTful webservices & AWS </p>
-              <p>Developer in Payments Banking (Financial Services) -
+              <p>Developer in Payments Banking (Financial Services) -</p>
+              
+              <div class="blink-bg  w3-col m6  w3-padding-small">I'm Looking for Job Change</div>
 
+             
           
             </div>
         </div>
@@ -184,14 +200,13 @@
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
-        <h2 class="w3-xxlarge w3-hover-text-black w3-wide"><i><b><i class="fa fa-code" aria-hidden="true"></i>Code Respository</b><em></h2>
+        <h2 class="w3-large w3-hover-text-black w3-wide w3-green"><i><b><i class="fa fa-code" aria-hidden="true" ></i>Code Respository</b><em><i class="fa fa-brackets-curly"></i></h2>
         <a href="https://github.com/ravi29pandey/" class="w3-center   w3-text-red"><i class="fa fa-github" aria-hidden="true"></i><b>github</b><em></em></p> 
-            <a href="https://medium.com/@ravi29shekhar" class="w3-center w3-text-yellow"><i class="fa fa-linkedin" aria-hidden="true"></i><b>medium</b><em></em></p>
+        <a href="https://medium.com/@ravi29shekhar" class="w3-center w3-text-yellow"><i class="fa fa-linkedin" aria-hidden="true"></i><b>medium</b><em></em></p>
         <a href="https://www.hackerrank.com/Ravi29Pandey" class="w3-center w3-text-green"><i class="fa fa-cube" aria-hidden="true"></i><b>hackerrank</b><em></em></p>
-        <a href="https://www.linkedin.com/in/ravi-pandey-701327126/" class="w3-center w3-text-blue"><i class="fa fa-linkedin" aria-hidden="true"></i><b> Linkedin</b></a><em></em></p>
-        </a></a></a>
-
-            </div>
+        <a href="https://www.linkedin.com/in/ravi-pandey-701327126/" class="w3-margin-right   w3-text-blue"><i class="fa fa-linkedin" aria-hidden="true"></i><b> Linkedin</b><em></em></p>
+        </a></a></a></a>
+        </div>
     </div>
 
    
@@ -225,8 +240,11 @@
             </div>
         
            
+
+
+            
            
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">Learning .....</button>
         </div>
     </div>
 
@@ -241,11 +259,11 @@
     </div>
 
     <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-hover-opacity-off">
+    <div class="bgimg-3 w3-display-container w3-hover-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-deep-orange w3-wide"><b>Education<b><i class="fa fa-graduation-cap"></i></span><br>
             <span class="w3-large w3-text-indigo w3-wide"><b>College: BBD NIIT(EC)</b> </span><br>
-            <span class="w3-large w3-text-dark-gray w3-wide"><b>University: AKTU </b></span>
+            <span class="w3-large w3-text-dark-gray w3-wide"><b>University: AKTU LUCKNOW </b></span>
            
                    </div>
     </div>
@@ -330,6 +348,10 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
+
+
+
+        
     </script>
 
 </body>
